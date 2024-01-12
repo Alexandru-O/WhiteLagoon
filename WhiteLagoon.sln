@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Web", "WhiteLagoon.Web\WhiteLagoon.Web.csproj", "{5389076E-E99D-47A4-A6F6-86263B468432}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteLagoon.Web", "WhiteLagoon.Web\WhiteLagoon.Web.csproj", "{5389076E-E99D-47A4-A6F6-86263B468432}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteLagoon.Domain", "WhiteLagoon.Domain\WhiteLagoon.Domain.csproj", "{002CB743-DE53-4A0B-A6E5-8FED934DC271}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhiteLagoon.Infrastructure", "WhiteLagoon.Infrastructure\WhiteLagoon.Infrastructure.csproj", "{5F064F84-D8DB-47AE-92DA-7357BC418356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteLagoon.Application", "WhiteLagoon.Application\WhiteLagoon.Application.csproj", "{34023293-3744-4F02-8463-F853F9008E3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{5389076E-E99D-47A4-A6F6-86263B468432}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5389076E-E99D-47A4-A6F6-86263B468432}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5389076E-E99D-47A4-A6F6-86263B468432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{002CB743-DE53-4A0B-A6E5-8FED934DC271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{002CB743-DE53-4A0B-A6E5-8FED934DC271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{002CB743-DE53-4A0B-A6E5-8FED934DC271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{002CB743-DE53-4A0B-A6E5-8FED934DC271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F064F84-D8DB-47AE-92DA-7357BC418356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F064F84-D8DB-47AE-92DA-7357BC418356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F064F84-D8DB-47AE-92DA-7357BC418356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F064F84-D8DB-47AE-92DA-7357BC418356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34023293-3744-4F02-8463-F853F9008E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34023293-3744-4F02-8463-F853F9008E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34023293-3744-4F02-8463-F853F9008E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34023293-3744-4F02-8463-F853F9008E3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
