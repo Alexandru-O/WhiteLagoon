@@ -6,7 +6,7 @@ namespace WhiteLagoon.Application.Common.Interfaces
     {
         void Update(Booking entity);
 
-        void UpdateStatus(int bookingId, string orderStatus);
+        void UpdateStatus(int bookingId, string orderStatus, int villaNumber);
 
         void UpdateStripePaymentID(int bookingId, string sessionId, string paymentIntentId);
     }
