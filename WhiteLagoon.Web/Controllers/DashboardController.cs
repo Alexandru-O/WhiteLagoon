@@ -29,13 +29,21 @@ namespace WhiteLagoon.Web.Controllers
             var countByCurrentMonth = totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= DateTime.Now);
             var countByPreviousMonth = totalBookings.Count(u => u.BookingDate >= currentMonthStartDate && u.BookingDate <= currentMonthStartDate);
 
-            RadialBarChartVM radialBarChartVM = new()
+            RadialBarChartVM radialBarChartVM = new();
+
+            int increaseDecreaseRatio = 100;
+
+            if (countByPreviousMonth != 0)
             {
-                TotalCount = totalBookings.Count(),
-                IncreaseDecreaseAmount = countByCurrentMonth - countByPreviousMonth,
-                HasRatioIncreased = countByCurrentMonth > countByPreviousMonth,
-                Series = new int[] { countByCurrentMonth, countByPreviousMonth }
+                increaseDecreaseRatio = Convert.ToInt32((countByCurrentMonth - countByPreviousMonth) / countByPreviousMonth * 100);
             }
+
+            radialBarChartVM.TotalCount = totalBookings.Count();
+            radialBarChartVM.CountInCurrentMonth = increaseDecreaseRatio;
+            radialBarChartVM.HasRatioIncreased = currentMonthStartDate > previousMonthStartDate;
+            radialBarChartVM.Series = new int[] { countByCurrentMonth, countByPreviousMonth, increaseDecreaseRatio };
+
+            return Json(radialBarChartVM);
         }
     }
 }
